@@ -17,11 +17,11 @@
 		<br>
 	<label for="gender">Gender</label>
 	<label for="male">Male</label>
-	<input type="radio" name="gender" id="gender_m">
+	<input type="radio" name="gender" id="gender_m" required>
 		<label for="female">Female</label>
-	<input type="radio" name="gender" id="gender_f">
+	<input type="radio" name="gender" id="gender_f" required>
 		<br>
-	<label for="car brands">Car Brands</label>	
+	<label  for="car brands">Car Brands</label>	
 		<select id="car" >
 			<option value="" disabled selected hidden >--Please choose an option--</option>
 			<option value="bmw">BMW</option>
@@ -31,11 +31,21 @@
 		</select>
 		<br>
 	<label for="age">Age</label>
-	<input type="number" id="age" name="age" placeholder="Age">
+	<input type="number" id="age" name="age" placeholder="Age" required>
 	<br
 	<label for="dob">DOB</label>
-	<input type="number" id="dob" name="dob" placeholder="dob">
+	<input type="number" id="dob" name="dob" placeholder="dob" required>
 	<br>
+	<label for="phonenumber">Phone Number</label>
+	<input type="number" id="tel" name="phonenumber" placeholder="xxx-xxx-xxxx" required>
+	<br>
+   	<label for="password">Password</label>
+	<input id="password" type="number" name="password" placeholder="password" required>
+		<br>
+	<p>I agree to the TOS</p>
+	<input type="checkbox" id="tos" required>
+	<br>
+	<button id=submit>submit button</button>
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
